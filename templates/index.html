@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildTech.io - Innovating for the Future</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>BuildTech.io</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/products">Products</a>
+                <a href="/services">Services</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Innovating for Tomorrow</h2>
+            <p>At BuildTech.io, we are committed to developing cutting-edge solutions that address the needs of today's dynamic world. Our innovative products are designed to empower individuals and businesses by providing advanced technology that enhances productivity and well-being.</p>
+            <a href="/products" class="btn">Explore Our Products</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>BuildTech.io is a forward-thinking startup dedicated to creating impactful solutions across various domains. Our approach combines creativity with technology to build products that solve real-world problems. We are passionate about innovation and committed to providing exceptional value to our users.</p>
+            <a href="/about" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>Explore our diverse range of products designed to meet various needs. From enhancing personal well-being to simplifying daily tasks, our solutions are built with the latest technology and user-centric design.</p>
+            <div class="product-cards">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/products/health.jpg') }}" alt="Health Assistance">
+                    <h3>Health Assistance</h3>
+                    <p>Our Health Assistance tool leverages AI to provide users with personalized health management solutions. From tracking vital statistics to offering actionable insights, our tool aims to improve overall well-being and provide timely medical support.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/products/resume.png') }}" alt="Resume Builder">
+                    <h3>Resume Builder</h3>
+                    <p>The Resume Builder is designed to help job seekers create professional, eye-catching resumes with ease. Choose from a variety of templates, customize your content, and generate a polished resume ready for any job application.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/products/ai.jpg') }}" alt="AI Tools for Students">
+                    <h3>AI Tools for Students</h3>
+                    <p>Our suite of AI tools provides students with intelligent study aids, personalized learning plans, and academic support. These tools are designed to enhance the learning experience and help students achieve their academic goals more effectively.</p>
+                </div>
+            </div>
+            <a href="/products" class="btn btn-secondary">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <img src="{{ url_for('static', filename='images/testimonials/male.jpeg') }}" alt="Jane Doe">
+                    <p>"BuildTech.io's products have transformed the way we approach technology in our business. Their innovative solutions have greatly enhanced our productivity and efficiency."</p>
+                    <h3>Jane Doe</h3>
+                    <p>CEO, Tech Innovations</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="{{ url_for('static', filename='images/testimonials/male.jpeg') }}" alt="John Smith">
+                    <p>"The Resume Builder tool is exceptional! It made creating a professional resume a breeze, and I landed my dream job thanks to its outstanding features."</p>
+                    <h3>John Smith</h3>
+                    <p>Job Seeker</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="{{ url_for('static', filename='images/testimonials/female.jpeg') }}" alt="Emily White">
+                    <p>"The AI Tools for Students have been a game-changer for my studies. The personalized learning plans and study aids have made a huge difference in my academic performance."</p>
+                    <h3>Emily White</h3>
+                    <p>Student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2>From Our Blog</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <img src="{{ url_for('static', filename='images/blog/tech-trends.jpg') }}" alt="Tech Trends">
+                    <h3>Latest Tech Trends to Watch</h3>
+                    <p>Stay ahead of the curve with our insights into the latest technology trends. Discover what's shaping the future of tech and how it can impact your business.</p>
+                    <a href="/blog/tech-trends" class="btn btn-secondary">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="{{ url_for('static', filename='images/blog/startup-tips.jpg') }}" alt="Startup Tips">
+                    <h3>Top Tips for Startup Success</h3>
+                    <p>Starting a new business? Check out our top tips and strategies for achieving success in the competitive startup landscape.</p>
+                    <a href="/blog/startup-tips" class="btn btn-secondary">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="{{ url_for('static', filename='images/blog/productivity.jpg') }}" alt="Productivity Hacks">
+                    <h3>Boost Your Productivity with These Hacks</h3>
+                    <p>Looking to improve your productivity? Explore practical tips and tools that can help you get more done in less time.</p>
+                    <a href="/blog/productivity" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>We would love to hear from you! Whether you have a question about our products, need support, or just want to say hello, feel free to reach out to us through the following contact details:</p>
+                <p>Email: <a href="mailto:contact@buildtech.io">contact@buildtech.io</a> | Phone: +123 456 7890</p>
+            </section>
+            <section id="social">
+                <h2>Follow Us</h2>
+                <a href="https://twitter.com/buildtech" target="_blank">Twitter</a> |
+                <a href="https://linkedin.com/company/buildtech" target="_blank">LinkedIn</a> |
+                <a href="https://facebook.com/buildtech" target="_blank">Facebook</a>
+            </section>
+            <p>&copy; 2024 BuildTech.io. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
